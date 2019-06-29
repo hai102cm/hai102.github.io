@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+.clearfix {
+	 overflow:hidden;
+}
+body {
+	background-color:#FFFFFF;
+}
+.width20 {
+	width:20%;
+}
+.width80 {
+	width:80%;
+}
+.typeNone ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+h1 {
+    text-transform: uppercase;
+    text-shadow: 2px 3px #889807;
+}
+a {
+	color:#7FD1AE; 
+}
+.kichThuocAo {
+	outline:2px solid #1604EE;
+}
+.nav {
+	width:100%;
+	/*height:162px;*/
+}
+.header {
+	width:100%;
+}
+.body {
+	width:100%;
+}
+.footer {
+	width:100%;
+}
+.left {
+	float:left;
+	width:20%;
+}
+.right {
+	float:right;
+	width:80%;
+}
+/*Cố định các thành phần bên trái*/
+/*#coDinh {
+	display:block;
+	position:fixed; /*Hiển thị lớp trên cùng
+}*/
+/*phần css cho div.nav*/
+div.nav > .left > a > img {
+	width:267px;
+	height:118px;
+}
+div.nav > .right > h1 {
+	margin: 0;
+    padding: 25px;
+    text-align: center;
+    font-size: 60px;
+    color: #278ee8;
+	background: linear-gradient(#FFFFFF, #FFDFCA, #F9F871);
+}
+.flashit{
+	animation: flash linear 1s infinite;
+}
+@keyframes flash {
+	from {color:#00F;}
+	to {color:#F00;}
+}
+/*phần css cho ul có decoration: none*/
+ul.decoration {
+	}
+/*phần css cho div.header*/
+div.header > ul:hover {
+	/*padding-left: 20px;*/
+}
+div.header > ul {
+	padding-left: 269px;
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+div.header > ul > li {
+	float:left;
+	min-width:100px;
+	width:152px;
+	text-align:center;
+}
+
+.menu ul > li > a {
+	text-decoration:none;
+	padding: 8px 10px;
+	min-width:50px;
+	display:block;
+}
+.menu ul > li > a:hover {
+	background-color:#FFFFFF;
+}
+div.header > ul > li > ul > li {
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+.clearfix ul.subcontent {
+	display:none; /*ẩn class sub conten*/
+}
+li.submenu:hover ul.subcontent{
+	display:block;  /*hiện class sub conten*/
+	position:absolute;  /*cho nó nổi lên class sub conten*/
+	text-align:left;
+}
+/*phần css cho div.body*/
+div.body > .left > h2 {
+	text-align: center;
+    text-transform: uppercase;
+}
+div.body > .left > ul > li {
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+div.body > .left > ul > li >  a {
+	padding-left:30px;
+}
+div.body > .left > ul > li:hover ul.subcontent {
+	display:block;  /*hiện class sub conten*/
+	position:fixed;  /*cho nó nổi lên class sub conten*/
+	margin-left:250px;    
+	margin-top: -34px;
+}
+div.body > .left > .write > .left > img, div.title{
+	height:42px;
+}
+/*css phần from*/
+div.body > .right h1 {
+	color: #0000ffd4;
+    text-align: center;
+	margin: 3px 0 3px -32px;
+    border-radius: 15px 15px 0 0;
+	background-color:#FFE8F7;
+}
+div.body > .right > .leftFrom {
+	min-width: 260px;
+    float: left;
+    margin: 20px 30px 20px 100px;
+    padding-left: 33px;
+    padding-bottom: 25px;
+    background-color:#FFF5FF;
+    border-radius: 15px;
+}
+div.body > .right > .leftFrom > form > input, div.body > .right > .leftFrom > form > button {
+	margin: 5px 0;
+}
+div.body > .right > .rightFrom {
+	min-width: 400px;
+    float: left;
+    margin: 20px 30px 20px 50px;
+    padding-left: 33px;
+    padding-bottom: 25px;
+    background-color:#FFF5FF;
+    border-radius: 15px;
+}
+[type="text"], [type="password"], [type="date"] {
+	width: 245px;
+    height: 25px;
+}
+[type="button"] {
+	float:right;
+	width: 100px;
+    height: 30px;
+}
+div.body > .right > .leftFrom > form > [type="button"] {
+	margin-right:12px;
+}
+[type="button"] > a {
+	color:#33F;
+	text-decoration:none;
+}
+/*Css phần footer*/
+div.footer > .footerTop {
+	width:80%;
+	margin-left:18%;
+}
+div.footer > .footerTop > .A, .danhMuc, .account {
+	margin:10px;
+	background-color:#FFF5FF;
+    border-radius: 20px;
+}
+div.footer > div.footerTop h3 {
+	border-bottom: 2px solid #0202F2;
+    margin: 15px;
+}
+div.footer > .footerTop > .A {
+	width:38%;
+	float:left;
+}
+div.footer > .footerTop > .A > p {
+	margin:0 0 10px 25px;
+}
+div.footer > .footerTop ul {
+	margin:0 0 10px 30px;
+}
+div.footer > .footerTop ul > li > a {
+	text-decoration:none;
+	color:#00F;
+}
+div.footer > .footerTop > .danhMuc {
+	width:28%;
+	float:left;
+}
+div.footer > .footerTop > .account {
+	width:28%;
+	float:left;
+}
+div.footer > h4 {
+	margin: 0;
+    padding: 0;
+    padding-top: 10px !important;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    height: 22px;
+}
+div.footer > .thamKhao {
+	float:right;
+}
+div.footer > .return {
+	display:block;
+	position:fixed;
+	bottom:40px; /*Nằm bên dưới*/
+	right:10px; /*Nằm bên trái*/
+	z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+div.footer > .return > a > img {
+	width:50px;
+    border-radius: 50%;
+}
+

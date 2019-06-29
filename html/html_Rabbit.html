@@ -1,0 +1,474 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>thỏ/Shop thú cưng Bằng Hải</title>
+<script src="../jQuery/jquery-3.4.0.min.js" ></script>
+<script src="../jQuery/iQueryPhanTab.js"></script>
+<script src="../javascript/thayDoiMauText.js"></script>
+<script src="../jQuery/JqueryCoDinhThanhPhan.js"></script>
+<link href="../css/css_TrangCon.css" rel="stylesheet" />
+<link href="../img/logo0202.png" rel="shortcut icon" />
+</head>
+
+<body>
+	<div class="nav">
+    	<div class="left clearfix" id="coDinh">
+        	<a href="#trangChu">
+            	<img src="../img/logo0202.png" alt="Trang chủ" />
+            </a>
+        </div>
+        <div class="right">
+        	<div class="top clearfix typeNone">
+            	<ul class="TopLeft">
+                    <li><a href="#" onClick="timKiem()"><img src="../img/icon/search.png" alt="Tìm kiếm" /></a></li>
+                	<li><input type="text" id="seach" placeholder="Tìm kiếm..." /></li>
+                </ul>
+                <ul class="TopRight">
+                	<li>
+                    	<a href="#">
+                        	<img src="../img/icon/GioHang.png" alt="Giỏ hàng" />
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="html_login.html">
+                        	<img src="../img/icon/user.png" alt="Đăng nhập" />
+                    	</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+            	<h1 class="flashit">shop thú cưng Bằng Hải</h1>
+            </div>
+        </div>
+    </div>
+    
+	<div class="header menu clearfix typeNone">
+    	<ul class="clearfix">
+        	<li><a href="html_trangChu.html#trangChu">Trang chủ</a></li>
+            <li class="submenu">
+            	<a href="#">Thức ăn</a>
+                <ul class="subcontent clearfix">
+                	<li><a href="#">Thức ăn cho chó</a></li>
+                    <li><a href="#">Thức ăn cho mèo</a></li>
+                    <li><a href="#">Thức ăn cho chuột</a></li>
+                    <li><a href="#">Thức ăn cho thỏ</a></li>
+                    <li><a href="#">Thức ăn cho thú cưng khác</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+            	<a href="#">Phụ kiện</a>
+                <ul class="subcontent clearfix">
+                	<li><a href="#">Phụ kiện cho chó</a></li>
+                    <li><a href="#">Phụ kiện cho mèo</a></li>
+                    <li><a href="#">Phụ kiện cho chuột</a></li>
+                    <li><a href="#">Phụ kiện cho thỏ</a></li>
+                    <li><a href="#">Phụ kiện cho thú cưng khác</a></li>
+                </ul>
+            </li>
+            <li><a href="html_trangChu.html#gioiThieu">Giới thiệu</a></li>
+            <li><a href="html_trangChu.html#quyenLoiKH">Quyền lợi</a></li>
+            <li><a href="html_trangChu.html#lienHeShop">Liên hệ</a></li> <!--trỏ tới thành phần có id="lienHeShop"-->
+        </ul>
+    </div>
+    
+    <div class="body typeNone">
+    	<div class="left clearfix menu" id="coDinh">
+        	<h2>Các loại thú cưng</h2>
+        	<ul>
+            	<li><a href="html_dog.html">Giống chó</a></li>
+                <li><a href="htlm_cat.html">Giống mèo</a></li>
+                <li><a href="html_mouse.html">Giống chuột</a></li>
+                <li><a href="#">Giống thỏ</a></li>
+                <li><a href="html_cacLoaiKhac.html">Các loại thú cưng khác</a></li>
+            </ul>
+            <br />
+            <hr />
+            
+            <h2>bài viết</h2>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg"   />
+                    
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+        </div>
+        <div class="right clearfix">
+        	<ul class="tab clearfix">
+                <li><a href="#tabA">Thỏ Angora</a></li>
+                <li><a href="#tabB">Thỏ Anh</a></li>
+                <li><a href="#tabC">Thỏ tai cụp tí hon</a></li>
+                <li><a href="#tabD">Thỏ Rex con</a></li>
+                <li><a href="#tabE">Thỏ lùn Hà Lan</a></li>
+            </ul>
+            <div class="tab clearfix">
+            	<div id="tabA" class="clearfix">
+                	<h1>Thỏ Angora</h1>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Angora/AGR1.jpg" alt="Tho_Angora_AGR1" />
+                        </a>
+                        <p>Tho_Angora_AGR1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Angora/AGR2.jpg" alt="Tho_Angora_AGR2" />
+                        </a>
+                        <p>Tho_Angora_AGR2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Angora/AGR3.jpg" alt="Tho_Angora_AGR3" />
+                        </a>
+                        <p>Tho_Angora_AGR3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Angora/AGR4.jpg" alt="Tho_Angora_AGR4" />
+                        </a>
+                        <p>Tho_Angora_AGR4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Angora/AGR5.jpg" alt="Tho_Angora_AGR5" />
+                        </a>
+                        <p>Tho_Angora_AGR5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Angora/AGR6.jpg" alt="Tho_Angora_AGR6" />
+                        </a>
+                        <p>Tho_Angora_AGR6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Angora/AGR7.jpg" alt="Tho_Angora_AGR7" />
+                        </a>
+                        <p>Tho_Angora_AGR7</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Angora/AGR8.jpg" alt="Tho_Angora_AGR8" />
+                        </a>
+                        <p>Tho_Angora_AGR8</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Angora/AGR9.jpg" alt="Tho_Angora_AGR9" />
+                        </a>
+                        <p>Tho_Angora_AGR9</p>
+                    </div>
+                    <iframe src="https://www.youtube.com/embed/iUZgEFRoIX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            	<div id="tabB" class="clearfix">
+                	<h1>Thỏ Anh</h1>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Anh/TE_1.jpg" alt="Tho_Anh_TE_1" />
+                        </a>
+                        <p>Tho_Anh_TE_1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Anh/TE_2.jpg" alt="Tho_Anh_TE_2" />
+                        </a>
+                        <p>Tho_Anh_TE_2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Anh/TE_3.jpg" alt="Tho_Anh_TE_3" />
+                        </a>
+                        <p>Tho_Anh_TE_3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Anh/TE_4.jpg" alt="Tho_Anh_TE_4" />
+                        </a>
+                        <p>Tho_Anh_TE_4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Anh/TE_5.jpg" alt="Tho_Anh_TE_5" />
+                        </a>
+                        <p>Tho_Anh_TE_5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Anh/TE_6.jpg" alt="Tho_Anh_TE_6" />
+                        </a>
+                        <p>Tho_Anh_TE_6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Anh/TE_7.jpg" alt="Tho_Anh_TE_7" />
+                        </a>
+                        <p>Tho_Anh_TE_7</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Anh/TE_8.jpg" alt="Tho_Anh_TE_8" />
+                        </a>
+                        <p>Tho_Anh_TE_8</p>
+                    </div>
+                    <iframe src="https://www.youtube.com/embed/_AEpDSjs0-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="tabC" class="clearfix">
+                	<h1>Thỏ tai cụp tí hon</h1>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Minilop/MNL1.jpg" alt="Tho_Minilop_MNL1" />
+                        </a>
+                        <p>Tho_Minilop_MNL1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Minilop/MNL2.jpg" alt="Tho_Minilop_MNL2" />
+                        </a>
+                        <p>Bacgie_BG2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Minilop/MNL3.jpg" alt="Tho_Minilop_MNL3" />
+                        </a>
+                        <p>Tho_Minilop_MNL3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Minilop/MNL4.jpg" alt="Tho_Minilop_MNL4" />
+                        </a>
+                        <p>Tho_Minilop_MNL4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Minilop/MNL5.jpg" alt="Tho_Minilop_MNL5" />
+                        </a>
+                        <p>Tho_Minilop_MNL5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Minilop/MNL6.jpg" alt="Tho_Minilop_MNL6" />
+                        </a>
+                        <p>Tho_Minilop_MNL6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Minilop/MNL7.jpg" alt="Tho_Minilop_MNL7" />
+                        </a>
+                        <p>Tho_Minilop_MNL7</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Minilop/MNL8.jpg" alt="Tho_Minilop_MNL8" />
+                        </a>
+                        <p>Tho_Minilop_MNL8</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_Minilop/MNL9.jpg" alt="Tho_Minilop_MNL9" />
+                        </a>
+                        <p>Tho_Minilop_MNL9</p>
+                    </div>
+                    <iframe src="https://www.youtube.com/embed/jaCOIEqREL8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="tabD"  class="clearfix">
+                	<h1>Thỏ Rex con</h1>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_MiniRex/MNR1.jpg" alt="Tho_MiniRex_MNR1" />
+                        </a>
+                        <p>Tho_MiniRex_MNR1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_MiniRex/MNR2.jpg" alt="Tho_MiniRex_MNR2" />
+                        </a>
+                        <p>Tho_MiniRex_MNR2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_MiniRex/MNR3.jpg" alt="Tho_MiniRex_MNR3" />
+                        </a>
+                        <p>Tho_MiniRex_MNR3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_MiniRex/MNR4.jpg" alt="Tho_MiniRex_MNR4" />
+                        </a>
+                        <p>Tho_MiniRex_MNR4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_MiniRex/MNR5.jpg" alt="Tho_MiniRex_MNR5" />
+                        </a>
+                        <p>Tho_MiniRex_MNR5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_MiniRex/MNR6.jpg" alt="Tho_MiniRex_MNR6" />
+                        </a>
+                        <p>Tho_MiniRex_MNR6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_MiniRex/MNR7.jpg" alt="Tho_MiniRex_MNR7" />
+                        </a>
+                        <p>Tho_MiniRex_MNR7</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_MiniRex/MNR8.jpg" alt="Tho_MiniRex_MNR8" />
+                        </a>
+                        <p>Tho_MiniRex_MNR8</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_MiniRex/MNR9.jpg" alt="Tho_MiniRex_MNR9" />
+                        </a>
+                        <p>Tho_MiniRex_MNR9</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_MiniRex/MNR10.jpg" alt="Tho_MiniRex_MNR10" />
+                        </a>
+                        <p>Tho_MiniRex_MNR10</p>
+                    </div>
+                    <iframe src="https://www.youtube.com/embed/WX63HIXO0Cc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="tabE" class="clearfix">
+                	<h1>Thỏ lùn Hà Lan</h1>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_NetherlandDwarf Thỏ lùn Hà Lan/NDW1.jpg" alt="Tho_NetherlandDwarf_NDW1" />
+                        </a>
+                        <p>Tho_NetherlandDwarf_NDW1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_NetherlandDwarf Thỏ lùn Hà Lan/NDW2.jpg" alt="Tho_NetherlandDwarf_NDW2" />
+                        </a>
+                        <p>Tho_NetherlandDwarf_NDW2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_NetherlandDwarf Thỏ lùn Hà Lan/NDW3.jpg" alt="Tho_NetherlandDwarf_NDW3" />
+                        </a>
+                        <p>Tho_NetherlandDwarf_NDW3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_NetherlandDwarf Thỏ lùn Hà Lan/NDW4.jpg" alt="Tho_NetherlandDwarf_NDW4" />
+                        </a>
+                        <p>Tho_NetherlandDwarf_NDW4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_NetherlandDwarf Thỏ lùn Hà Lan/NDW5.jpg" alt="Tho_NetherlandDwarf_NDW5" />
+                        </a>
+                        <p>Tho_NetherlandDwarf_NDW5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_NetherlandDwarf Thỏ lùn Hà Lan/NDW6.jpg" alt="Tho_NetherlandDwarf_NDW6" />
+                        </a>
+                        <p>Tho_NetherlandDwarf_NDW6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_NetherlandDwarf Thỏ lùn Hà Lan/NDW7.jpg" alt="Tho_NetherlandDwarf_NDW7" />
+                        </a>
+                        <p>Tho_NetherlandDwarf_NDW7</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_NetherlandDwarf Thỏ lùn Hà Lan/NDW8.jpg" alt="Tho_NetherlandDwarf_NDW8" />
+                        </a>
+                        <p>Tho_NetherlandDwarf_NDW8</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_NetherlandDwarf Thỏ lùn Hà Lan/NDW9.jpg" alt="Tho_NetherlandDwarf_NDW9" />
+                        </a>
+                        <p>Tho_NetherlandDwarf_NDW9</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Tho/Tho_NetherlandDwarf Thỏ lùn Hà Lan/NDW10.jpg" alt="Tho_NetherlandDwarf_NDW10" />
+                        </a>
+                        <p>Tho_NetherlandDwarf_NDW10</p>
+                    </div>
+                    <iframe src="https://www.youtube.com/embed/ovBnNzuTZQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer clearfix">
+    	<div class="footerTop clearfix typeNone">
+            <div class="A">
+                <h3>Shop thú cưng Bằng Hải</h3>
+                <p>Địa chỉ tin cậy để bạn tìm kiếm cho mình một người bạn thú cưng đồng hành đáng yêu,
+                 phụ kiện cho thú cưng chất lượng giá cạnh tranh....</p>
+            </div>
+            <div class="danhMuc">
+            	<h3>Danh mục</h3>
+                <ul class="clearfix">
+                    <li><a href="html_trangChu.html#trangChu">Trang chủ</a></li>
+                    <li><a href="html_ThucAn.html">Thức ăn</a></li>
+                    <li><a href="html_phuKien.html">Phụ kiện</a></li>
+                    <li><a href="html_trangChu.html#gioiThieu">Giới thiệu</a></li>
+                    <li><a href="html_trangChu.html#quyenLoiKH">Quyền lợi</a></li>
+                    <li><a href="html_trangChu.html#lienHeShop">Liên hệ</a></li> <!--trỏ tới thành phần có id="lienHeShop"-->
+                </ul>
+            </div>
+            <div class="account">
+                <h3>Account</h3>
+                <ul class="clearfix">
+                    <li><a href="html_login.html#dangNhap">Đăng nhập</a></li>
+                    <li><a href="html_login.html#dangKy">Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="return clearfix">
+        	<a href="#">
+    			<img src="../img/icon/retturn09.png" alt="iconReturn" />
+            </a>
+    	</div>
+    	<h4>banghai&copy;2019 bản quyền của trang web</h4>
+        <div class="thamKhao">
+            <span>Các link các trang web tham khảo:</span>
+            <button><a href="https://www.thukieng.com" target="_blank">Thukieng.com</a> </button>
+            <button><a href="http://binbondogshop.com" target="_blank">binbondogshop.com</a> </button>
+            <button><a href="https://www.petxinh.net/" target="_blank">petxinh.com</a> </button>
+            <button><a href="http://hamsterbabali.com/" target="_blank">hamsterbabali.com</a> </button>
+        </div>
+    </div>
+	
+</body>
+</html>

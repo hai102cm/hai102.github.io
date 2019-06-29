@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+/*phần css chung cho cả trang web có các thẻ hay class*/
+.clearfix {
+	 overflow:hidden;
+}
+body {
+	background-color:#FFFFFF;
+}
+.width20 {
+	width:20%;
+}
+.width80 {
+	width:80%;
+}
+.typeNone ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+h1 {
+    text-transform: uppercase;
+    text-shadow: 2px 3px #889807;
+}
+.kichThuocAo {
+	outline:2px solid #1604EE;
+}
+.nav {
+	width:100%;
+	/*height:162px;*/
+}
+.header {
+	width:100%;
+}
+.body {
+	width:100%;
+}
+.footer {
+	width:100%;
+}
+.left {
+	float:left;
+	width:20%;
+}
+.right {
+	float:right;
+	width:80%;
+}
+
+/*Cố định các thành phần bên trái*/
+/*#coDinh {
+	display:block;
+	position:fixed; /*Hiển thị lớp trên cùng
+}*/
+/*phần css cho div.nav*/
+div.nav > .left > a > img {
+	width:267px;
+	/*height:160px;*/
+}
+div.nav > .right > .top {
+	height:25%;
+}
+div.nav > .right > .top img {
+	width:25px;
+}
+div.nav > .right > .top > ul > li {
+	float:left;
+	padding-top:5px;
+}
+div.nav > .right > .top > ul > li > a {
+    padding:0;
+}
+
+div.nav > .right > .top li:first-child {
+	padding-left: 16px;
+}
+div.nav > .right > .top li [type="text"] {
+	margin-left: 15px;
+	width: 350px;
+    height: 22px;
+}
+div.nav > .right > .top > ul.TopRight > li {
+	float:right; /*Khi float thứ tự bị thay đổi*/
+}
+
+div.nav > .right > .top > ul.TopRight > li > a{
+	padding: 4px 20px;
+}
+
+div.nav > .right > .bottom {
+	height:75%;
+}
+div.nav > .right > .bottom > h1 {
+	margin: 0;
+    padding: 25px;
+    text-align: center;
+    font-size: 60px;
+    color:#00F;
+	background: linear-gradient(#FFFFFF, #FFDFCA, #F9F871);
+}
+/* Flash class and keyframe animation */
+.flashit{
+	animation: flash linear 1s infinite;
+}
+@keyframes flash {
+	from {color:#00F;}
+	to {color:#F00;}
+}
+/*css thanh seach*/
+@keyframes changeOutline {
+	from {outline:1px solid blue;}
+	to {outline:1px solid red;}
+}
+
+/*phần css cho ul có decoration: none*/
+ul.decoration {
+	}
+/*phần css cho div.header*/
+div.header > ul:hover {
+	/*padding-left: 20px;*/
+}
+div.header > ul {
+	padding-left: 269px;
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+div.header > ul > li {
+	float:left;
+	min-width:100px;
+	width:176px;
+	text-align:center;
+}
+div.header > ul > li > ul > li {
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+.menu ul > li > a {
+	text-decoration:none;
+	padding: 8px 10px;
+	min-width:50px;
+	display:block;
+}
+.menu ul > li > a:hover {
+	background-color:#FFFFFF;
+}
+.clearfix ul.subcontent {
+	display:none; /*ẩn class sub conten*/
+}
+li.submenu:hover ul.subcontent{
+	display:block;  /*hiện class sub conten*/
+	position:fixed;  /*cho nó nổi lên class sub conten*/
+	text-align:left;
+}
+
+.fix-top{/*phần css dùng để cố định phần header*/
+	position:fixed;
+	top:0;
+	right:0;
+	z-index:1000;/*cho nó nổi lên trên cùng*/
+}
+
+
+/*phần css cho div.body*/
+div.body > .left > h2 {
+	text-align: center;
+    text-transform: uppercase;
+}
+
+div.body > .left > ul > li {
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+div.body > .left > ul > li >  a {
+	padding-left:30px;
+}
+/*div.body > .left > ul > li:hover ul.subcontent {
+	display:block;  /*hiện class sub conten
+	position:fixed;  /*cho nó nổi lên class sub conten
+	margin-left:255px;    
+	margin-top: -34px;
+}*/
+div.body > .left > .write > .left > img, div.title{
+	height:42px;
+}
+
+.fix-left-top{/*phần css dùng để cố định phần header*/
+	position:fixed;
+	left:8px;
+	margin-top:32px;
+	z-index:1000;/*cho nó nổi lên trên cùng*/
+}
+
+div.right > .left5050 {
+	width:49%;
+	float:left;
+	margin:5px;
+}
+div.right > .left5050 > div.tab > div > img {
+	width:80%;
+	margin: 25px 52px;
+}
+div.right > .left5050 > ul.tab {
+	margin-left:42px;
+}
+div.right > .left5050 > ul.tab > li > a > img {
+	width: 80px;
+    height: 60px;
+    margin: 10px;
+    float: left;
+}
+div.right > .right5050 {
+	width:49%;
+	float:left;
+    margin: 25px 5px 0 5px;
+    background-color: #FFF5FF;
+    border-radius: 20px;
+}
+
+div.right > .right5050 > h1 { 
+	border-radius: 20px 20px 0 0;
+    background-color: #FFE8F7;
+    margin-top: 3px;
+    padding: 15px;
+}
+
+div.right > .right5050 > button {
+	float: right;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    min-height: 50px;
+    min-width: 58px;
+}
+div.right > .right5050 > p {
+    margin: 10px 5px 10px 25px;
+}
+div.right > .right5050 > p + p {
+    text-align: right;
+    margin-right: 30px;
+}
+div.right > .right5050 > button > a {
+	text-decoration:none;
+}
+/*phần css cho div.footer*/
+div.footer > .footerTop {
+	width:80%;
+	margin-left:18%;
+}
+div.footer > .footerTop > .A, .danhMuc, .account {
+	margin:10px;
+	background-color:#FFF5FF;
+    border-radius: 20px;
+}
+div.footer > div.footerTop h3 {
+	border-bottom: 2px solid #0202F2;
+    margin: 15px;
+}
+div.footer > .footerTop > .A {
+	width:38%;
+	float:left;
+}
+div.footer > .footerTop > .A > p {
+	margin:0 0 10px 25px;
+}
+div.footer > .footerTop ul {
+	margin:0 0 10px 30px;
+}
+div.footer > .footerTop ul > li > a {
+	text-decoration:none;
+	color:#00F;
+}
+div.footer > .footerTop > .danhMuc {
+	width:28%;
+	float:left;
+}
+div.footer > .footerTop > .account {
+	width:28%;
+	float:left;
+}
+div.footer > h4 {
+	margin: 0;
+    padding: 0;
+    padding-top: 10px !important;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    height: 22px;
+}
+div.footer > .thamKhao {
+	float:right;
+}
+div.footer > .return {
+	display:block;
+	position:fixed;
+	bottom:40px; /*Nằm bên dưới*/
+	right:10px; /*Nằm bên trái*/
+	z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+div.footer > .return > a > img {
+	width:50px;
+    border-radius: 50%;
+}

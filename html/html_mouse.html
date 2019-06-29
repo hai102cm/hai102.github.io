@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>chuột/Shop thú cưng Bằng Hải</title>
+<script src="../jQuery/jquery-3.4.0.min.js" ></script>
+<script src="../jQuery/iQueryPhanTab.js"></script>
+<script src="../javascript/thayDoiMauText.js"></script>
+<script src="../jQuery/JqueryCoDinhThanhPhan.js"></script>
+<link href="../css/css_TrangCon.css" rel="stylesheet" />
+<link href="../img/logo0202.png" rel="shortcut icon" />
+</head>
+
+<body>
+	<div class="nav">
+    	<div class="left clearfix" id="coDinh">
+        	<a href="#trangChu">
+            	<img src="../img/logo0202.png" alt="Trang chủ" />
+            </a>
+        </div>
+        <div class="right">
+        	<div class="top clearfix typeNone">
+            	<ul class="TopLeft">
+                    <li><a href="#" onClick="timKiem()"><img src="../img/icon/search.png" alt="Tìm kiếm" /></a></li>
+                	<li><input type="text" id="seach" placeholder="Tìm kiếm..." /></li>
+                </ul>
+                <ul class="TopRight">
+                	<li>
+                    	<a href="#">
+                        	<img src="../img/icon/GioHang.png" alt="Giỏ hàng" />
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="html_login.html">
+                        	<img src="../img/icon/user.png" alt="Đăng nhập" />
+                    	</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+            	<h1 class="flashit">shop thú cưng Bằng Hải</h1>
+            </div>
+        </div>
+    </div>
+    
+	<div class="header menu clearfix typeNone">
+    	<ul class="clearfix">
+        	<li><a href="html_trangChu.html#trangChu">Trang chủ</a></li>
+            <li class="submenu">
+            	<a href="html_ThucAn.html">Thức ăn</a>
+                <ul class="subcontent clearfix">
+                	<li><a href="#">Thức ăn cho chó</a></li>
+                    <li><a href="#">Thức ăn cho mèo</a></li>
+                    <li><a href="#">Thức ăn cho chuột</a></li>
+                    <li><a href="#">Thức ăn cho thỏ</a></li>
+                    <li><a href="#">Thức ăn cho thú cưng khác</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+            	<a href="html_phuKien.html">Phụ kiện</a>
+                <ul class="subcontent clearfix">
+                	<li><a href="#">Phụ kiện cho chó</a></li>
+                    <li><a href="#">Phụ kiện cho mèo</a></li>
+                    <li><a href="#">Phụ kiện cho chuột</a></li>
+                    <li><a href="#">Phụ kiện cho thỏ</a></li>
+                    <li><a href="#">Phụ kiện cho thú cưng khác</a></li>
+                </ul>
+            </li>
+            <li><a href="html_trangChu.html#gioiThieu">Giới thiệu</a></li>
+            <li><a href="html_trangChu.html#quyenLoiKH">Quyền lợi</a></li>
+            <li><a href="html_trangChu.html#lienHeShop">Liên hệ</a></li> <!--trỏ tới thành phần có id="lienHeShop"-->
+        </ul>
+    </div>
+    
+    <div class="body typeNone">
+    	<div class="left clearfix menu" id="coDinh">
+        	<h2>Các loại thú cưng</h2>
+        	<ul>
+            	<li><a href="html_dog.html">Giống chó</a></li>
+                <li><a href="htlm_cat.html">Giống mèo</a></li>
+                <li><a href="#">Giống chuột</a></li>
+                <li><a href="html_Rabbit.html">Giống thỏ</a></li>
+                <li><a href="html_cacLoaiKhac.html">Các loại thú cưng khác</a></li>
+            </ul>
+            <br />
+            <hr />
+            
+            <h2>bài viết</h2>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg"   />
+                    
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+        </div>
+        <div class="right clearfix">
+        	<ul class="tab clearfix">
+                <li><a href="#tabA">Hamster_Bear</a></li>
+                <li><a href="#tabB">Hamster Robo</a></li>
+            </ul>
+            <div class="tab clearfix">
+            	<div id="tabA" class="clearfix">
+                	<h1>Hamster_Bear</h1>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Bear/Bear1.jpg" alt="Hamster_Bear_Bear1" />
+                        </a>
+                        <p>Husky_HK1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Bear/Bear2.jpg" alt="Hamster_Bear_Bear2" />
+                        </a>
+                        <p>Hamster_Bear_Bear2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Bear/Bear3.jpg" alt="Hamster_Bear_Bear3" />
+                        </a>
+                        <p>Hamster_Bear_Bear3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Bear/Bear4.jpg" alt="Hamster_Bear_Bear4" />
+                        </a>
+                        <p>Hamster_Bear_Bear4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Bear/Bear5.jpg" alt="Hamster_Bear_Bear5" />
+                        </a>
+                        <p>Hamster_Bear_Bear5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Bear/Bear6.jpg" alt="Hamster_Bear_Bear6" />
+                        </a>
+                        <p>Hamster_Bear_Bear6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Bear/Bear7.jpg" alt="Hamster_Bear_Bear7" />
+                        </a>
+                        <p>Hamster_Bear_Bear7</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Bear/Bear8.jpg" alt="Hamster_Bear_Bear8" />
+                        </a>
+                        <p>Hamster_Bear_Bear8</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Bear/Bear9.jpg" alt="Hamster_Bear_Bear9" />
+                        </a>
+                        <p>Hamster_Bear_Bear9</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Bear/Bear10.jpg" alt="Hamster_Bear_Bear10" />
+                        </a>
+                        <p>Hamster_Bear_Bear10</p>
+                    </div>
+                    <iframe src="https://www.youtube.com/embed/PYSJL5PRYzE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            	<div id="tabB" class="clearfix">
+                	<h1>Hamster Robo</h1>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Robo/RB1.jpg" alt="Hamster_Robo_RB1" />
+                        </a>
+                        <p>Hamster_Robo_RB1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Robo/RB2.jpg" alt="Hamster_Robo_RB2" />
+                        </a>
+                        <p>Hamster_Robo_RB2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Robo/RB3.jpg" alt="Hamster_Robo_RB3" />
+                        </a>
+                        <p>Hamster_Robo_RB3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Robo/RB4.jpg" alt="Hamster_Robo_RB4" />
+                        </a>
+                        <p>Hamster_Robo_RB4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Robo/RB5.jpg" alt="Hamster_Robo_RB5" />
+                        </a>
+                        <p>Hamster_Robo_RB5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Robo/RB6.jpg" alt="Hamster_Robo_RB6" />
+                        </a>
+                        <p>Hamster_Robo_RB6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Robo/RB7.jpg" alt="Hamster_Robo_RB7" />
+                        </a>
+                        <p>Hamster_Robo_RB7</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Robo/RB8.jpg" alt="Hamster_Robo_RB8" />
+                        </a>
+                        <p>Hamster_Robo_RB8</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Robo/RB9.jpg" alt="Hamster_Robo_RB9" />
+                        </a>
+                        <p>Hamster_Robo_RB9</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/thu/CacLoai_Chuot(Hamster)/Hamster_Robo/RB10.jpg" alt="Hamster_Robo_RB10" />
+                        </a>
+                        <p>Hamster_Robo_RB10</p>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Unlo8F3cLDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer clearfix">
+    	<div class="footerTop clearfix typeNone">
+            <div class="A">
+                <h3>Shop thú cưng Bằng Hải</h3>
+                <p>Địa chỉ tin cậy để bạn tìm kiếm cho mình một người bạn thú cưng đồng hành đáng yêu,
+                 phụ kiện cho thú cưng chất lượng giá cạnh tranh....</p>
+            </div>
+            <div class="danhMuc">
+            	<h3>Danh mục</h3>
+                <ul class="clearfix">
+                    <li><a href="html_trangChu.html#trangChu">Trang chủ</a></li>
+                    <li><a href="html_ThucAn.html">Thức ăn</a></li>
+                    <li><a href="html_phuKien.html">Phụ kiện</a></li>
+                    <li><a href="html_trangChu.html#gioiThieu">Giới thiệu</a></li>
+                    <li><a href="html_trangChu.html#quyenLoiKH">Quyền lợi</a></li>
+                    <li><a href="html_trangChu.html#lienHeShop">Liên hệ</a></li> <!--trỏ tới thành phần có id="lienHeShop"-->
+                </ul>
+            </div>
+            <div class="account">
+                <h3>Account</h3>
+                <ul class="clearfix">
+                    <li><a href="html_login.html#dangNhap">Đăng nhập</a></li>
+                    <li><a href="html_login.html#dangKy">Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="return clearfix">
+        	<a href="#">
+    			<img src="../img/icon/retturn09.png" alt="iconReturn" />
+            </a>
+    	</div>
+    	<h4>banghai&copy;2019 bản quyền của trang web</h4>
+        <div class="thamKhao">
+            <span>Các link các trang web tham khảo:</span>
+            <button><a href="https://www.thukieng.com" target="_blank">Thukieng.com</a> </button>
+            <button><a href="http://binbondogshop.com" target="_blank">binbondogshop.com</a> </button>
+            <button><a href="https://www.petxinh.net/" target="_blank">petxinh.com</a> </button>
+            <button><a href="http://hamsterbabali.com/" target="_blank">hamsterbabali.com</a> </button>
+        </div>
+    </div>
+</body>
+</html>

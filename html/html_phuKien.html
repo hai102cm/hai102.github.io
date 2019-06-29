@@ -1,0 +1,532 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>phụ kiện /Shop thú cưng Bằng Hải</title>
+<script src="../jQuery/jquery-3.4.0.min.js" ></script>
+<script src="../jQuery/iQueryPhanTab.js"></script>
+<script src="../javascript/thayDoiMauText.js"></script>
+<script src="../jQuery/JqueryCoDinhThanhPhan.js"></script>
+<link href="../css/css_TrangCon.css" rel="stylesheet" />
+<link href="../img/logo0202.png" rel="shortcut icon" />
+
+</head>
+
+<body>
+	<div class="nav">
+    	<div class="left clearfix" id="coDinh">
+        	<a href="#trangChu">
+            	<img src="../img/logo0202.png" alt="Trang chủ" />
+            </a>
+        </div>
+        <div class="right">
+        	<div class="top clearfix typeNone">
+            	<ul class="TopLeft">
+                    <li><a href="#" onClick="timKiem()"><img src="../img/icon/search.png" alt="Tìm kiếm" /></a></li>
+                	<li><input type="text" id="seach" placeholder="Tìm kiếm..." /></li>
+                </ul>
+                <ul class="TopRight">
+                	<li>
+                    	<a href="#">
+                        	<img src="../img/icon/GioHang.png" alt="Giỏ hàng" />
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="html_login.html">
+                        	<img src="../img/icon/user.png" alt="Đăng nhập" />
+                    	</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+            	<h1 class="flashit">shop thú cưng Bằng Hải</h1>
+            </div>
+        </div>
+    </div>
+    
+	<div class="header menu clearfix typeNone">
+    	<ul class="clearfix">
+        	<li><a href="html_trangChu.html#trangChu">Trang chủ</a></li>
+            <li class="submenu">
+            	<a href="html_ThucAn.html">Thức ăn</a>
+                <ul class="subcontent clearfix">
+                	<li><a href="#">Thức ăn cho chó</a></li>
+                    <li><a href="#">Thức ăn cho mèo</a></li>
+                    <li><a href="#">Thức ăn cho chuột</a></li>
+                    <li><a href="#">Thức ăn cho thỏ</a></li>
+                    <li><a href="#">Thức ăn cho thú cưng khác</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+            	<a href="#">Phụ kiện</a>
+                <ul class="subcontent clearfix">
+                	<li><a href="#">Phụ kiện cho chó</a></li>
+                    <li><a href="#">Phụ kiện cho mèo</a></li>
+                    <li><a href="#">Phụ kiện cho chuột</a></li>
+                    <li><a href="#">Phụ kiện cho thỏ</a></li>
+                    <li><a href="#">Phụ kiện cho thú cưng khác</a></li>
+                </ul>
+            </li>
+            <li><a href="html_trangChu.html#gioiThieu">Giới thiệu</a></li>
+            <li><a href="html_trangChu.html#quyenLoiKH">Quyền lợi</a></li>
+            <li><a href="html_trangChu.html#lienHeShop">Liên hệ</a></li> <!--trỏ tới thành phần có id="lienHeShop"-->
+        </ul>
+    </div>
+    
+    <div class="body typeNone">
+    	<div class="left clearfix menu" id="coDinh">
+        	<h2>Các loại thú cưng</h2>
+        	<ul>
+            	<li><a href="html_dog.html">Giống chó</a></li>
+                <li><a href="htlm_cat.html">Giống mèo</a></li>
+                <li><a href="html_mouse.html">Giống chuột</a></li>
+                <li><a href="html_Rabbit.html">Giống thỏ</a></li>
+                <li><a href="html_cacLoaiKhac.html">Các loại thú cưng khác</a></li>
+            </ul>
+            <br />
+            <hr />
+            
+            <h2>bài viết</h2>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg"   />
+                    
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+        </div>
+        <div class="right clearfix">
+        	<ul class="tab clearfix">
+                <li><a href="#tabA">Chuồng</a></li>
+                <li><a href="#tabB">Dây đeo</a></li>
+                <li><a href="#tabC">Kệ thức ăn</a></li>
+                <li><a href="#tabD">Sữa tắm</a></li>
+            </ul>
+            <div class="tab clearfix">
+            	<div id="tabA" class="clearfix">
+                	<h1>Chuồng</h1>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/CH1.jpg" alt="Chuong_CH1" />
+                        </a>
+                        <p>Chuong_CH1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/CH2.jpg" alt="Chuong_CH2" />
+                        </a>
+                        <p>Chuong_CH2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/CH3.jpg" alt="Chuong_CH3" />
+                        </a>
+                        <p>Chuong_CH3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/CH4.jpg" alt="Chuong_CH4" />
+                        </a>
+                        <p>Chuong_CH4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/CH5.jpg" alt="Chuong_CH5" />
+                        </a>
+                        <p>Chuong_CH5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/CH6.jpg" alt="Chuong_CH6" />
+                        </a>
+                        <p>Chuong_CH6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/CH1.jpg" alt="Chuong_CH7" />
+                        </a>
+                        <p>Chuong_CH7</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/CXTD.jpeg" alt="Chuong_CXTD" />
+                        </a>
+                        <p>Chuong_CXTD</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/GSV.jpg" alt="Chuong_GSV" />
+                        </a>
+                        <p>Chuong_GSV</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/GSV1.jpeg" alt="Chuong_GSV1" />
+                        </a>
+                        <p>Chuong_GSV1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/GSV1.jpg" alt="Chuong_GSV2" />
+                        </a>
+                        <p>Chuong_GSV2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/HR.jpg" alt="Chuong_HR" />
+                        </a>
+                        <p>Chuong_HR</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/TH1.jpg" alt="Chuong_TH1" />
+                        </a>
+                        <p>Chuong_TH1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/TH2.jpg" alt="Chuong_TH2" />
+                        </a>
+                        <p>Chuong_TH2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/TH3.jpg" alt="Chuong_TH3" />
+                        </a>
+                        <p>Chuong_TH3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/TH4.jpg" alt="Chuong_TH4" />
+                        </a>
+                        <p>Chuong_TH4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/TH5.jpg" alt="Chuong_TH5" />
+                        </a>
+                        <p>Chuong_TH5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/TH6.jpg" alt="Chuong_TH6" />
+                        </a>
+                        <p>Chuong_TH6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/Chuong/TH7.jpg" alt="Chuong_TH7" />
+                        </a>
+                        <p>Chuong_TH7</p>
+                    </div>
+                </div>
+            	<div id="tabB" class="clearfix">
+                	<h1>Dây đeo</h1>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD1.JPG" alt="DayDeo_DD1" />
+                        </a>
+                        <p>DayDeo_DD1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD2.JPG" alt="DayDeo_DD2" />
+                        </a>
+                        <p>DayDeo_DD2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD3.JPG" alt="DayDeo_DD3" />
+                        </a>
+                        <p>DayDeo_DD3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD4.JPG" alt="DayDeo_DD4" />
+                        </a>
+                        <p>DayDeo_DD4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD5.JPG" alt="DayDeo_DD5" />
+                        </a>
+                        <p>DayDeo_DD5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD6.JPG" alt="DayDeo_DD6" />
+                        </a>
+                        <p>DayDeo_DD6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD7.JPG" alt="DayDeo_DD7" />
+                        </a>
+                        <p>DayDeo_DD7</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD8.JPG" alt="DayDeo_DD8" />
+                        </a>
+                        <p>DayDeo_DD8</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD9.JPG" alt="DayDeo_DD9" />
+                        </a>
+                        <p>DayDeo_DD9</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD10.JPG" alt="DayDeo_DD10" />
+                        </a>
+                        <p>DayDeo_DD1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD11.JPG" alt="DayDeo_DD11" />
+                        </a>
+                        <p>DayDeo_DD11</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD12.JPG" alt="DayDeo_DD12" />
+                        </a>
+                        <p>DayDeo_DD12</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD13.JPG" alt="DayDeo_DD13" />
+                        </a>
+                        <p>DayDeo_DD13</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD14.JPG" alt="DayDeo_DD14" />
+                        </a>
+                        <p>DayDeo_DD14</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DD15.JPG" alt="DayDeo_DD15" />
+                        </a>
+                        <p>DayDeo_DD15</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/DayDeo/DDC.jpg" alt="DayDeo_DDC" />
+                        </a>
+                        <p>DayDeo_DDC</p>
+                    </div>
+                </div>
+                <div id="tabC" class="clearfix">
+                	<h1>Kệ thức ăn</h1>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/KeThucAn/DTA.jpg" alt="KeThucAn_DTA" />
+                        </a>
+                        <p>KeThucAn_DTA</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/KeThucAn/DTA1.jpg" alt="KeThucAn_DTA1" />
+                        </a>
+                        <p>KeThucAn_DTA1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/KeThucAn/DTA2.jpg" alt="KeThucAn_DTA2" />
+                        </a>
+                        <p>KeThucAn_DTA2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/KeThucAn/DTA3.jpg" alt="KeThucAn_DTA3" />
+                        </a>
+                        <p>KeThucAn_DTA3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/KeThucAn/DTA4.jpg" alt="KeThucAn_DTA4" />
+                        </a>
+                        <p>KeThucAn_DTA4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/KeThucAn/DTA5.jpg" alt="KeThucAn_DTA5" />
+                        </a>
+                        <p>KeThucAn_DTA5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/KeThucAn/DTA6.jpg" alt="KeThucAn_DTA6" />
+                        </a>
+                        <p>KeThucAn_DTA6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/KeThucAn/DTA7.jpg" alt="KeThucAn_DTA7" />
+                        </a>
+                        <p>KeThucAn_DTA7</p>
+                    </div>
+                </div>
+                <div id="tabD"  class="clearfix">
+                	<h1>Sữa tắm</h1>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/1.jpg" alt="SuaTam_1" />
+                        </a>
+                        <p>SuaTam_1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/2.jpg" alt="SuaTam_2" />
+                        </a>
+                        <p>SuaTam_2</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/3.jpg" alt="SuaTam_3" />
+                        </a>
+                        <p>SuaTam_3</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/4.jpg" alt="SuaTam_4" />
+                        </a>
+                        <p>SuaTam_4</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/5.jpg" alt="SuaTam_5" />
+                        </a>
+                        <p>SuaTam_5</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/6.jpg" alt="SuaTam_6" />
+                        </a>
+                        <p>SuaTam_6</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/7.jpg" alt="SuaTam_7" />
+                        </a>
+                        <p>SuaTam_7</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/8.jpg" alt="SuaTam_8" />
+                        </a>
+                        <p>SuaTam_8</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/9.jpg" alt="SuaTam_9" />
+                        </a>
+                        <p>SuaTam_9</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/10.jpg" alt="SuaTam_10" />
+                        </a>
+                        <p>SuaTam_10</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/11.jpg" alt="SuaTam_11" />
+                        </a>
+                        <p>SuaTam_1</p>
+                    </div>
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/12.jpg" alt="SuaTam_12" />
+                        </a>
+                        <p>SuaTam_12</p>
+                    </div>
+                    
+                    <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/ST.jpg" alt="SuaTam_ST" />
+                        </a>
+                        <p>SuaTam_ST</p>
+                    </div>
+                     <div class="imgChinh">
+                        <a href="#">
+                            <img src="../img/PhuKien/SuaTam/ST1.jpeg" alt="SuaTam_ST1" />
+                        </a>
+                        <p>SuaTam_ST1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer clearfix">
+    	<div class="footerTop clearfix typeNone">
+            <div class="A">
+                <h3>Shop thú cưng Bằng Hải</h3>
+                <p>Địa chỉ tin cậy để bạn tìm kiếm cho mình một người bạn thú cưng đồng hành đáng yêu,
+                 phụ kiện cho thú cưng chất lượng giá cạnh tranh....</p>
+            </div>
+            <div class="danhMuc">
+            	<h3>Danh mục</h3>
+                <ul class="clearfix">
+                    <li><a href="html_trangChu.html#trangChu">Trang chủ</a></li>
+                    <li><a href="html_ThucAn.html">Thức ăn</a></li>
+                    <li><a href="html_phuKien.html">Phụ kiện</a></li>
+                    <li><a href="html_trangChu.html#gioiThieu">Giới thiệu</a></li>
+                    <li><a href="html_trangChu.html#quyenLoiKH">Quyền lợi</a></li>
+                    <li><a href="html_trangChu.html#lienHeShop">Liên hệ</a></li> <!--trỏ tới thành phần có id="lienHeShop"-->
+                </ul>
+            </div>
+            <div class="account">
+                <h3>Account</h3>
+                <ul class="clearfix">
+                    <li><a href="html_login.html#dangNhap">Đăng nhập</a></li>
+                    <li><a href="html_login.html#dangKy">Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="return clearfix">
+        	<a href="#">
+    			<img src="../img/icon/retturn09.png" alt="iconReturn" />
+            </a>
+    	</div>
+    	<h4>banghai&copy;2019 bản quyền của trang web</h4>
+        <div class="thamKhao">
+            <span>Các link các trang web tham khảo:</span>
+            <button><a href="https://www.thukieng.com" target="_blank">Thukieng.com</a> </button>
+            <button><a href="http://binbondogshop.com" target="_blank">binbondogshop.com</a> </button>
+            <button><a href="https://www.petxinh.net/" target="_blank">petxinh.com</a> </button>
+            <button><a href="http://hamsterbabali.com/" target="_blank">hamsterbabali.com</a> </button>
+        </div>
+    </div>
+</body>
+</html>

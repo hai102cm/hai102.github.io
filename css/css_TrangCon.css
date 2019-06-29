@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*phần css chung cho cả trang web có các thẻ hay class*/
+
+
+body {
+	background-color:#FFF;
+}
+.width20 {
+	width:20%;
+}
+.width80 {
+	width:80%;
+}
+.typeNone ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+h1 {
+    text-transform: uppercase;
+    text-shadow: 2px 3px #889807;
+}
+.nav {
+	width:100%;
+	/*height:162px;*/
+}
+.header {
+	width:100%;
+}
+.body {
+	width:100%;
+}
+.footer {
+	width:100%;
+}
+.left {
+	float:left;
+	width:20%;
+}
+.right {
+	float:right;
+	width:80%;
+}
+/*Cố định các thành phần bên trái*/
+/*#coDinh {
+	display:block;
+	position:fixed; /*Hiển thị lớp trên cùng
+}*/
+/*phần css cho div.nav*/
+div.nav > .left > a > img {
+	width:267px;
+	/*height:160px;*/
+}
+div.nav > .right > .top {
+	height:25%;
+}
+div.nav > .right > .top img {
+	width:25px;
+}
+div.nav > .right > .top li {
+	float:left;
+	padding-top:5px;
+}
+div.nav > .right > .top > ul > li > a {
+	background:none; /*xóa nề cho các button*/
+    padding:0;
+}
+
+div.nav > .right > .top li:first-child {
+	padding-left: 16px;
+}
+div.nav > .right > .top li [type="text"] {
+	margin-left: 15px;
+	width: 350px;
+    height: 22px;
+}
+div.nav > .right > .top > ul.TopRight > li {
+	float:right; /*Khi float thứ tự bị thay đổi*/
+}
+
+div.nav > .right > .top > ul.TopRight > li > a{
+	padding: 4px 20px;
+}
+
+div.nav > .right > .bottom {
+	height:75%;
+}
+div.nav > .right > .bottom > h1 {
+	margin: 0;
+    padding: 25px;
+    text-align: center;
+    font-size: 60px;
+    color: #278ee8;
+    background: linear-gradient(#FFFFFF, #FFDFCA, #F9F871);
+}
+/* Flash class and keyframe animation */
+.flashit{
+	animation: flash linear 1s infinite;
+}
+@keyframes flash {
+	from {color:#00F;}
+	to {color:#F00;}
+}
+/*phần css cho ul có decoration: none*/
+ul.decoration {
+	}
+/*phần css cho div.header*/
+div.header > ul:hover {
+	/*padding-left: 20px;*/
+}
+div.header > ul {
+	padding-left: 269px;
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+div.header > ul > li {
+	float:left;
+	min-width:100px;
+	width:176px;
+	text-align:center;
+}
+div.header > ul > li > ul > li {
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+.menu ul > li > a {
+	text-decoration:none;
+	padding: 8px 10px;
+	min-width:50px;
+	display:block;
+}
+.menu ul > li > a:hover {
+	background-color:#FFF;
+}
+.clearfix ul.subcontent {
+	display:none; /*ẩn class sub conten*/
+}
+li.submenu:hover ul.subcontent{
+	display:block;  /*hiện class sub conten*/
+	position:fixed;  /*cho nó nổi lên class sub conten*/
+	text-align:left;
+}
+.fix-top{/*phần css dùng để cố định phần header*/
+	position:fixed;
+	top:0;
+	right:0;
+	z-index:1000;/*cho nó nổi lên trên cùng*/
+}
+
+/*phần css cho div.body*/
+div.body > .left > h2 {
+	text-align: center;
+    text-transform: uppercase;
+}
+div.body > .left > ul > li {
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+div.body > .left > ul > li >  a {
+	padding-left:30px;
+}
+/*div.body > .left > ul > li:hover ul.subcontent {
+	display:block;  /*hiện class sub conten
+	position:fixed;  /*cho nó nổi lên class sub conten
+	margin-left:255px;    
+	margin-top: -34px;
+}*/
+div.body > .left > .write > .left > img, div.title{
+	height:42px;
+}
+.fix-left-top{/*phần css dùng để cố định phần header*/
+	position:fixed;
+	left:0;
+	margin-top:32px;
+	z-index:1000;/*cho nó nổi lên trên cùng*/
+}
+
+
+/*css Noi Dung trang con right*/
+.mauNen {	
+	background-color:#FFF5FF;
+}
+div.body > .right > ul.tab {
+	background-color:#FFE8F7;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+div.body > .right > ul.tab > li:first-child {
+	margin-left:30px;
+}
+div.body > .right > ul.tab > li {
+	float:left;
+	margin: 5px 0 0 0;
+	min-width:10%;
+}
+div.body > .right > ul.tab > li > a {
+	text-align:center;
+	text-decoration:none;
+	color:#2F4858;
+	display:block;
+	padding:8px 10px;
+}
+div.body > .right > div.tab > div > h1 {
+	margin:0px;
+	padding:15px;
+}
+div.body > .right > div.tab > div {
+	border-radius:10px;
+	margin: 0 20px 20px 20px;
+}
+div.body > .right > div.tab > div > .imgChinh {
+	width: 33%;
+    background-color:#FFE8F7;
+	float:left;
+    margin: 1.7px;
+    border-radius: 15px;
+}
+div.body > .right > div.tab > div > .imgChinh > a > img {
+    width: 94%;
+	height:300px;
+    margin: 5%x;
+    margin: 10px;
+}
+div.body > .right > div.tab > div > iframe {
+	width:854px;
+	height:480px;
+	margin: 25px 85px;
+}
+
+/*phần css cho div.footer*/
+div.footer > .footerTop {
+	width:80%;
+	margin-left:18%;
+}
+div.footer > .footerTop > .A, .danhMuc, .account {
+	margin:10px;
+	background-color:#FFE8F7;
+    border-radius: 20px;
+}
+div.footer > div.footerTop h3 {
+	border-bottom: 2px solid #0202F2;
+    margin: 15px;
+}
+div.footer > .footerTop > .A {
+	width:38%;
+	float:left;
+}
+div.footer > .footerTop > .A > p {
+	margin:0 0 10px 25px;
+}
+div.footer > .footerTop ul {
+	margin:0 0 10px 30px;
+}
+div.footer > .footerTop ul > li > a {
+	text-decoration:none;
+	color:#00F;
+}
+div.footer > .footerTop > .danhMuc {
+	width:28%;
+	float:left;
+}
+div.footer > .footerTop > .account {
+	width:28%;
+	float:left;
+}
+div.footer > h4 {
+	margin: 0;
+    padding: 0;
+    padding-top: 10px !important;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    height: 22px;
+}
+div.footer > .thamKhao {
+	float:right;
+}
+div.footer > .return {
+	display:block;
+	position:fixed;
+	bottom:40px; /*Nằm bên dưới*/
+	right:10px; /*Nằm bên trái*/
+	z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+div.footer > .return > a > img {
+	width:50px;
+    border-radius: 50%;
+}
+
+.overlay-parent{
+	position:relative;
+	top:0;
+	left:0;
+}
+.overlay{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:rgba(0,0,0,0.7);/*opacity*/
+}

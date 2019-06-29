@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shop thú cưng Bằng Hải</title>
+<link href="../css/css_login.css" rel="stylesheet" />
+<link href="../img/logo0202.png" rel="shortcut icon" />
+
+</head>
+
+<body>
+	<div class="nav" >
+    	<div class="left clearfix" id="coDinh">
+        	<a href="#trangChu">
+            	<img src="../img/logo0202.png" alt="Trang chủ" />
+            </a>
+        </div>
+        <div class="right">
+        	<h1 class="flashit">shop thú cưng Bằng Hải</h1>
+        </div>
+    </div>
+    
+	<div class="header menu clearfix typeNone">
+    	<ul class="clearfix">
+        	<li><a href="html_trangChu.html#trangChu01">Trang chủ</a></li>
+            <li class="submenu">
+            	<a href="html_ThucAn.html">Thức ăn</a>
+                <ul class="subcontent clearfix">
+                	<li><a href="#">Thức ăn cho chó</a></li>
+                    <li><a href="#">Thức ăn cho mèo</a></li>
+                    <li><a href="#">Thức ăn cho chuột</a></li>
+                    <li><a href="#">Thức ăn cho thỏ</a></li>
+                    <li><a href="#">Thức ăn cho thú cưng khác</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+            	<a href="html_phuKien.html">Phụ kiện</a>
+                <ul class="subcontent clearfix">
+                	<li><a href="#">Phụ kiện cho chó</a></li>
+                    <li><a href="#">Phụ kiện cho mèo</a></li>
+                    <li><a href="#">Phụ kiện cho chuột</a></li>
+                    <li><a href="#">Phụ kiện cho thỏ</a></li>
+                    <li><a href="#">Phụ kiện cho thú cưng khác</a></li>
+                </ul>
+            </li>
+            <li><a href="html_trangChu.html#gioiThieu">Giới thiệu</a></li>
+            <li><a href="html_trangChu.html#quyenLoiKH">Quyền lợi</a></li>
+            <li><a href="html_trangChu.html#lienHeShop">Liên hệ</a></li> <!--trỏ tới thành phần có id="lienHeShop"-->
+        </ul>
+    </div>
+    
+    <div class="body typeNone">
+    	<div class="left clearfix menu" id="coDinh">
+        	<h2>Các loại thú cưng</h2>
+        	<ul>
+            	<li><a href="html_dog.html">Giống chó</a></li>
+                <li><a href="htlm_cat.html">Giống mèo</a></li>
+                <li><a href="html_mouse.html">Giống chuột</a></li>
+                <li><a href="html_Rabbit.html">Giống thỏ</a></li>
+                <li><a href="html_cacLoaiKhac.html">Các loại thú cưng khác</a></li>
+            </ul>
+            <br />
+            <hr />
+            
+            <h2>bài viết</h2>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+            <div class="write clearfix">
+            	<div class="left">
+                    <img src="../img/thu/CacLoai_Cho/Alaska/AK4.jpg" />
+                </div>
+                <div class="right">
+                    <div class="title">Alaska tinh nghịch</div>
+                </div>
+            </div>
+        </div>
+        <div class="right clearfix">
+        	<div class="leftFrom clearfix" id="dangNhap">
+                <form>
+                    <h1>Đăng nhập</h1>
+                    <hr />
+                    <div>Tên đăng nhập hoặc số điện thoại: </div>
+                    <input type="text" name="userName" placeholder="Nhập tên đăng nhập hoặc số điện thoại..." />
+                    <div>Mật khẩu: </div>
+                    <input type="password" name="passWord" placeholder="Nhập mật khẩu..." />
+                    <br />
+                    <button type="button" name="dangNhap"><a href="html_trangChu.html">Đăng nhập</a></button>
+                </form>
+        	</div>
+            <div class="rightFrom" id="dangKy">
+                <form>
+                    <h1>Đăng ký</h1>
+                    <hr />
+                    <table>
+                      <tr>
+                        <td>Nhập họ:</td>
+                        <td><input type="text" name="lastName" onClick="doiMauVien()" id="userName" placeholder="Nhập họ" /></td>
+                      </tr>
+                      <tr>
+                        <td>Nhập tên:</td>
+                        <td><input type="text" name="fistName" onClick="doiMauVien()" id="userName" placeholder="Nhập tên" /></td>
+                      </tr>
+                      <tr>
+                        <td>Tên đăng nhập:</td>
+                        <td><input type="text" name="userName" onClick="doiMauVien()" id="userName" placeholder="Nhập tên đăng nhập" /></td>
+                      </tr>
+                      <tr>
+                        <td>Số điện thoại:</td>
+                        <td><input type="text" name="soDienThoai" id="phonNumber" placeholder="Nhập số điện thoại" /></td>
+                      </tr>
+                      <tr>
+                        <td>Mail:</td>
+                        <td><input type="text" name="mail" onClick="doiMauVien()" id="email" placeholder="Nhập mail"  /></td>
+                      </tr>
+                      <tr>
+                        <td>Mật khẩu mới:</td>
+                        <td><input type="password" name="passWord" onClick="doiMauVien()" id="passWord" placeholder="Nhập mật khẩu mới" /></td>
+                      </tr>
+                      <tr>
+                        <td>Ngày sinh:</td>
+                        <td><input type="date" name="" max="2019-03-25" /></td>
+                      </tr>
+                      <tr>
+                        <td>Giới tính:</td>
+                        <td class="radio">
+                            <input type="radio" name="gioiTinh"  checked="checked" /> Nam <br />
+                            <input type="radio" name="gioiTinh" /> Nữ
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Địa chỉ:</td>
+                        <td><input type="text" name="diaChi" onClick="doiMauVien()" placeholder="Nhập địa chỉ" /></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><button type="button" name="dangNhap"><a href="html_trangChu.html">Đăng nhập</a></button></td>
+                      </tr>
+                    </table>
+                </form>
+        	</div>
+        </div>
+    </div>
+    
+    <div class="footer clearfix">
+    	<div class="footerTop clearfix typeNone">
+            <div class="A">
+                <h3>Shop thú cưng Bằng Hải</h3>
+                <p>Địa chỉ tin cậy để bạn tìm kiếm cho mình một người bạn thú cưng đồng hành đáng yêu,
+                 phụ kiện cho thú cưng chất lượng giá cạnh tranh....</p>
+            </div>
+            <div class="danhMuc">
+            	<h3>Danh mục</h3>
+                <ul class="clearfix">
+                    <li><a href="html_trangChu.html#trangChu">Trang chủ</a></li>
+                    <li><a href="html_ThucAn.html">Thức ăn</a></li>
+                    <li><a href="html_phuKien.html">Phụ kiện</a></li>
+                    <li><a href="html_trangChu.html#gioiThieu">Giới thiệu</a></li>
+                    <li><a href="html_trangChu.html#quyenLoiKH">Quyền lợi</a></li>
+                    <li><a href="html_trangChu.html#lienHeShop">Liên hệ</a></li> <!--trỏ tới thành phần có id="lienHeShop"-->
+                </ul>
+            </div>
+            <div class="account">
+                <h3>Account</h3>
+                <ul class="clearfix">
+                    <li><a href="#dangNhap">Đăng nhập</a></li>
+                    <li><a href="#dangKy">Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="return clearfix">
+        	<a href="#">
+    			<img src="../img/icon/retturn09.png" alt="iconReturn" />
+            </a>
+    	</div>
+    	<h4>banghai&copy;2019 bản quyền của trang web</h4>
+        <div class="thamKhao">
+            <span>Các link các trang web tham khảo:</span>
+            <button><a href="https://www.thukieng.com" target="_blank">Thukieng.com</a> </button>
+            <button><a href="http://binbondogshop.com" target="_blank">binbondogshop.com</a> </button>
+            <button><a href="https://www.petxinh.net/" target="_blank">petxinh.com</a> </button>
+            <button><a href="http://hamsterbabali.com/" target="_blank">hamsterbabali.com</a> </button>
+        </div>
+    </div>
+</body>
+</html>

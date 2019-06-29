@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* CSS Document */
+/*phần css chung cho cả trang web có các thẻ hay class*/
+.clearfix {
+	 overflow:hidden;
+}
+body {
+	background-color:#FFFFFF;
+}
+.width20 {
+	width:20%;
+}
+.width80 {
+	width:80%;
+}
+.typeNone ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+h1 {
+    text-transform: uppercase;
+    text-shadow: 2px 3px #889807;
+}
+.kichThuocAo {
+	outline:2px solid #1604EE;
+}
+.nav {
+	width:100%;
+	/*height:162px;*/
+}
+.header {
+	width:100%;
+}
+.body {
+	width:100%;
+}
+.footer {
+	width:100%;
+}
+.left {
+	float:left;
+	width:20%;
+}
+.right {
+	float:right;
+	width:80%;
+}
+
+/*Cố định các thành phần bên trái*/
+/*#coDinh {
+	display:block;
+	position:fixed; /*Hiển thị lớp trên cùng
+}*/
+/*phần css cho div.nav*/
+div.nav > .left > a > img {
+	width:267px;
+	/*height:160px;*/
+}
+div.nav > .right > .top {
+	height:25%;
+}
+div.nav > .right > .top img {
+	width:25px;
+}
+div.nav > .right > .top > ul > li {
+	float:left;
+	padding-top:5px;
+}
+div.nav > .right > .top > ul > li > a {
+    padding:0;
+}
+
+div.nav > .right > .top li:first-child {
+	padding-left: 16px;
+}
+div.nav > .right > .top li [type="text"] {
+	margin-left: 15px;
+	width: 350px;
+    height: 22px;
+}
+div.nav > .right > .top > ul.TopRight > li {
+	float:right; /*Khi float thứ tự bị thay đổi*/
+}
+
+div.nav > .right > .top > ul.TopRight > li > a{
+	padding: 4px 20px;
+}
+
+div.nav > .right > .bottom {
+	height:75%;
+}
+div.nav > .right > .bottom > h1 {
+	margin: 0;
+    padding: 25px;
+    text-align: center;
+    font-size: 60px;
+    color:#00F;
+	background: linear-gradient(#FFFFFF, #FFDFCA, #F9F871);
+}
+/* Flash class and keyframe animation */
+.flashit{
+	animation: flash linear 1s infinite;
+}
+@keyframes flash {
+	from {color:#00F;}
+	to {color:#F00;}
+}
+/*css thanh seach*/
+@keyframes changeOutline {
+	from {outline:1px solid blue;}
+	to {outline:1px solid red;}
+}
+
+/*phần css cho ul có decoration: none*/
+ul.decoration {
+	}
+/*phần css cho div.header*/
+div.header > ul:hover {
+	/*padding-left: 20px;*/
+}
+div.header > ul {
+	padding-left: 269px;
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+div.header > ul > li {
+	float:left;
+	min-width:100px;
+	width:176px;
+	text-align:center;
+}
+div.header > ul > li > ul > li {
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+.menu ul > li > a {
+	text-decoration:none;
+	padding: 8px 10px;
+	min-width:50px;
+	display:block;
+}
+.menu ul > li > a:hover {
+	background-color:#FFFFFF;
+}
+.clearfix ul.subcontent {
+	display:none; /*ẩn class sub conten*/
+}
+li.submenu:hover ul.subcontent{
+	display:block;  /*hiện class sub conten*/
+	position:fixed;  /*cho nó nổi lên class sub conten*/
+	text-align:left;
+}
+
+.fix-top{/*phần css dùng để cố định phần header*/
+	position:fixed;
+	top:0;
+	right:0;
+	z-index:1000;/*cho nó nổi lên trên cùng*/
+}
+
+
+/*phần css cho div.body*/
+div.body > .left > h2 {
+	text-align: center;
+    text-transform: uppercase;
+}
+
+div.body > .left > ul > li {
+    background: linear-gradient(#FFFFFF, #FFE8F7);
+}
+div.body > .left > ul > li >  a {
+	padding-left:30px;
+}
+/*div.body > .left > ul > li:hover ul.subcontent {
+	display:block;  /*hiện class sub conten
+	position:fixed;  /*cho nó nổi lên class sub conten
+	margin-left:255px;    
+	margin-top: -34px;
+}*/
+div.body > .left > .write > .left > img, div.title{
+	height:42px;
+}
+
+.fix-left-top{/*phần css dùng để cố định phần header*/
+	position:fixed;
+	left:8px;
+	margin-top:32px;
+	z-index:1000;/*cho nó nổi lên trên cùng*/
+}
+
+div.body > .right > .borderRadius {
+	margin: 1%;
+    background-color:#FFF5FF;
+    border-radius: 20px;
+    width: 98%;
+}
+div.body > .right h1 {
+	padding: 20px 0 0 25px;
+    margin: 0;
+	color: #3f00ff;
+    font-size: 30px;
+    background-color:#FFE8F7;
+    border-radius: 20px 20px 0 0;
+}
+div.body > .right .row > .imgTrangChu {
+	float:left;
+	margin:15px 0 4px 25px;
+	background-color:#FFE8F7;
+	width:30%;
+	min-height:268px;
+}
+div.body > .right .row > .imgTrangChu > a > img {
+	width:314px;
+	height:214px;
+}
+div.body > .right .row > .imgTrangChu > a > img:hover {
+	width:300px;
+	height:200px;
+	padding-top:13px;
+	padding-left:7px;
+	transition:1s ease;
+}
+div.body > .right .row > .imgTrangChu > p {
+	text-align:center;
+}
+div.body > .right > .borderRadius > h2 {
+    padding-left: 5%;
+    margin-bottom: 5px;
+}
+div.body > .right > .borderRadius > ul > h3 {
+    padding-left: 7%;
+    margin-bottom: 5px;
+}
+div.body > .right > #gioiThieu ul > li {
+	margin-left: 10%;
+    list-style-position: inside;
+    list-style-type:square;
+}
+div.body > .right > #gioiThieu > ul > li > ul {
+	margin-left: 50px;
+}
+div.body > .right > #gioiThieu > ul > li > ul > li {
+	background-color:#FFE8F7;
+    border-radius: 0 40px 0 40px;
+}
+div.body > .right > #gioiThieu ul > li > ul > li.iconDog {
+	list-style-image:url(../img/icon/dogIcon.png);
+}
+div.body > .right > #gioiThieu ul > li > ul > li.iconCat {
+	list-style-image:url(../img/icon/catIcon.png);
+}
+div.body > .right > #gioiThieu ul > li > ul > li.iconRabbit {
+	list-style-image:url(../img/icon/rabbitIcon.png);
+}
+div.body > .right > #gioiThieu ul > li > ul > li.iconMouse {
+	list-style-image:url(../img/icon/mouseIcon.png);
+}
+div.body > .right > #gioiThieu ul > li > ul > li.iconKhac {
+	list-style-image:url(../img/icon/khacIcon.png);
+}
+div.body > .right > #gioiThieu ul > li.loadLeft {
+	width: 23%;
+    float: left;
+    margin: 3px;
+    padding: 5px;
+}
+div.body > .right > #gioiThieu ul > li.loadLeft a {
+	color:#009;
+	text-decoration:none;
+}
+div.right > .borderRadius > .left50  {
+	width:46%;
+	margin:2%;
+	float:left;
+}
+div.right > .borderRadius > .left50 > .ql {
+	margin: 10px auto 10px auto;
+	height:100px;
+}
+div.right > .borderRadius > .left50 > .ql > .left50Left {
+    float: left;
+}
+div.right > .borderRadius > .left50 > .ql > .left50Right {
+    float: right;
+}
+div.right > .borderRadius > .left50 > .ql > .left50Left > h3 {
+	text-align: right;
+	margin: 8px 15px 0 0;
+}
+div.right > .borderRadius > .left50 > .ql > .left50Left >  p {
+	text-align: right;
+	margin: 12px 20px 0 0;
+}
+div.right > .borderRadius > .right50 > .ql {
+	margin: 10px auto 10px auto;
+	height:100px;
+}
+
+div.right > .borderRadius > .right50 > .ql > .right50Left {
+    float: left;
+}
+div.right > .borderRadius > .right50 > .ql > .right50Right {
+    float: right;
+}
+div.right > .borderRadius > .right50 > .ql > .right50Right > h3 {
+	text-align:left;
+	margin:8px 0 0 8px;
+}
+div.right > .borderRadius > .right50 > .ql > .right50Right > p {
+	text-align:left;
+    margin:12px 0 0 15px;
+}
+div.right > .borderRadius .ql > .width20 > img {
+	width: 60px;
+    height: 60px;
+    margin: 15%;
+}
+
+div.right > .borderRadius > .right50  {
+	width:46%;
+	margin:2%;
+	float: right;
+}
+div.right > .borderRadius > .lienHe {
+	width: 40%;
+    margin: 2px auto 10px 55px;
+}
+div.right > .borderRadius > .lienHe > .left img {
+	width:40px;
+	height:40px;
+	margin: 3px auto auto 30px;
+}
+div.right > .borderRadius > .lienHe > .right {
+	margin-top:10px;
+}
+div.right > .borderRadius > img {
+	position: absolute;
+    margin-left:26%;
+    margin-top: -36px;
+    width:694px;
+    height:220px;
+}
+
+/*phần css cho div.footer*/
+div.footer > .footerTop {
+	width:80%;
+	margin-left:18%;
+}
+div.footer > .footerTop > .A, .danhMuc, .account {
+	margin:10px;
+	background-color:#FFF5FF;
+    border-radius: 20px;
+}
+div.footer > div.footerTop h3 {
+	border-bottom: 2px solid #0202F2;
+    margin: 15px;
+}
+div.footer > .footerTop > .A {
+	width:38%;
+	float:left;
+}
+div.footer > .footerTop > .A > p {
+	margin:0 0 10px 25px;
+}
+div.footer > .footerTop ul {
+	margin:0 0 10px 30px;
+}
+div.footer > .footerTop ul > li > a {
+	text-decoration:none;
+	color:#00F;
+}
+div.footer > .footerTop > .danhMuc {
+	width:28%;
+	float:left;
+}
+div.footer > .footerTop > .account {
+	width:28%;
+	float:left;
+}
+div.footer > h4 {
+	margin: 0;
+    padding: 0;
+    padding-top: 10px !important;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    height: 22px;
+}
+div.footer > .thamKhao {
+	float:right;
+}
+div.footer > .return {
+	display:block;
+	position:fixed;
+	bottom:40px; /*Nằm bên dưới*/
+	right:10px; /*Nằm bên trái*/
+	z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+div.footer > .return > a > img {
+	width:50px;
+    border-radius: 50%;
+}
